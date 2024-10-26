@@ -34,12 +34,6 @@ export default function Login(){
                                         forInput="email"
                                         value="Email Address"
                                     />
-                                    {/* <input
-                                type="email"
-                                name="email"
-                                class="rounded-2xl bg-form-bg py-[13px] px-7 w-full focus:outline-alerange focus:outline-none"
-                                placeholder="Email Address"
-                            /> */}
                                     <Input
                                         type="email"
                                         name="email"
@@ -59,28 +53,13 @@ export default function Login(){
                                 </div>
                             </div>
                             <div class="grid space-y-[14px] mt-[30px]">
-                                {/* <a
-                            href="/"
-                            class="rounded-2xl bg-alerange py-[13px] text-center"
-                        >
-                            <span class="text-base font-semibold">
-                                Start Watching
-                            </span>
-                        </a> */}
-                                <Button type="button" variant="primary">
-                                    <span class="text-base font-semibold">
-                                        Start Watching
-                                    </span>
-                                </Button>
-                                {/* <a
-                            href="sign_up.html"
-                            class="rounded-2xl border border-white py-[13px] text-center"
-                        >
-                            <span class="text-base text-white">
-                                Create New Account
-                            </span>
-                        </a> */}
-
+                                <Link href={route("prototype.dashboard")}>
+                                    <Button type="button" variant="primary">
+                                        <span class="text-base font-semibold">
+                                            Start Watching
+                                        </span>
+                                    </Button>
+                                </Link>
                                 <Link href={route("prototype.register")}>
                                     <Button
                                         type="button"
