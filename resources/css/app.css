@@ -1,3 +1,49 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'input.css';
+@import 'button.css';
+@import 'sidebar.css';
+
+.flex::before,
+.flex::after {
+    display: none !important;
+}
+
+@layer components {
+        [multiple],
+        [type="date"],
+        [type="datetime-local"],
+        [type="email"],
+        [type="month"],
+        [type="number"],
+        [type="password"],
+        [type="search"],
+        [type="tel"],
+        [type="text"],
+        [type="time"],
+        [type="url"],
+        [type="week"],
+        select,
+        textarea {
+            border-color: transparent;
+        },
+        [type=date]:focus,
+        [type=datetime-local]:focus,
+        [type=email]:focus,
+        [type=month]:focus,
+        [type=number]:focus,
+        [type=password]:focus,
+        [type=search]:focus,
+        [type=tel]:focus,
+        [type=text]:focus,
+        [type=time]:focus,
+        [type=url]:focus,
+        [type=week]:focus,
+        [multiple]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: transparent;
+            --tw-ring-color: transparent;
+        }
+}
