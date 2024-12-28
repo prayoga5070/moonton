@@ -7,7 +7,7 @@ export default function SubscriptionCard({
     durationInMonth,
     features,
     isPremium,
-    onSalesSubscription,
+    onSelectSubscription,
 }) {
     return (
         <>
@@ -39,7 +39,7 @@ export default function SubscriptionCard({
                     </div>
 
                     {/* <!-- Bottom: CTA Button --> */}
-                    <div onClick={onSalesSubscription}>
+                    <div onClick={onSelectSubscription}>
                         <Button type="button" variant="white-outline">
                             <span className="text-base">Start {name}</span>
                         </Button>
@@ -99,7 +99,7 @@ export default function SubscriptionCard({
                     </div>
 
                     {/* <!-- Bottom: CTA Button --> */}
-                    <div onClick={onSalesSubscription}>
+                    <div onClick={onSelectSubscription}>
                         <Button
                             type="button"
                         >
