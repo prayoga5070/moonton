@@ -1,5 +1,3 @@
-import { method } from "lodash";
-
 const UserMenu = [
     {
         link: "user.dashboard.index",
